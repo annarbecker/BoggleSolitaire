@@ -1,6 +1,6 @@
 # Boggle Solitaire
 
-##### Boggle Solitaire App | April 18, 2016
+##### Boggle Solitaire App | April 20, 2016
 
 #### By Anna Becker & Michelle Brecunier
 
