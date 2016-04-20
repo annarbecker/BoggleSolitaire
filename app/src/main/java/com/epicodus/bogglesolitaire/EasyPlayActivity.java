@@ -65,7 +65,7 @@ public class EasyPlayActivity extends AppCompatActivity {
             public void onClick(View view) {
                 letterArray.add(consonant1);
                 mUserEditText.setText(TextUtils.join("", letterArray));
-
+                mButton1.setVisibility(view.INVISIBLE);
             }
         });
 
@@ -74,7 +74,7 @@ public class EasyPlayActivity extends AppCompatActivity {
             public void onClick(View view) {
                 letterArray.add(vowel1);
                 mUserEditText.setText(TextUtils.join("", letterArray));
-
+                mButton2.setVisibility(view.INVISIBLE);
             }
         });
 
@@ -83,7 +83,7 @@ public class EasyPlayActivity extends AppCompatActivity {
             public void onClick(View view) {
                 letterArray.add(consonant2);
                 mUserEditText.setText(TextUtils.join("", letterArray));
-
+                mButton3.setVisibility(view.INVISIBLE);
             }
         });
         mButton4.setOnClickListener(new View.OnClickListener() {
@@ -91,7 +91,7 @@ public class EasyPlayActivity extends AppCompatActivity {
             public void onClick(View view) {
                 letterArray.add(consonant3);
                 mUserEditText.setText(TextUtils.join("", letterArray));
-
+                mButton4.setVisibility(view.INVISIBLE);
             }
         });
         mButton5.setOnClickListener(new View.OnClickListener() {
@@ -99,7 +99,7 @@ public class EasyPlayActivity extends AppCompatActivity {
             public void onClick(View view) {
                 letterArray.add(vowel2);
                 mUserEditText.setText(TextUtils.join("", letterArray));
-
+                mButton5.setVisibility(view.INVISIBLE);
             }
         });
         mButton6.setOnClickListener(new View.OnClickListener() {
@@ -107,7 +107,7 @@ public class EasyPlayActivity extends AppCompatActivity {
             public void onClick(View view) {
                 letterArray.add(consonant4);
                 mUserEditText.setText(TextUtils.join("", letterArray));
-
+                mButton6.setVisibility(view.INVISIBLE);
             }
         });
         mButton7.setOnClickListener(new View.OnClickListener() {
@@ -115,7 +115,7 @@ public class EasyPlayActivity extends AppCompatActivity {
             public void onClick(View view) {
                 letterArray.add(vowel3);
                 mUserEditText.setText(TextUtils.join("", letterArray));
-
+                mButton7.setVisibility(view.INVISIBLE);
             }
         });
         mButton8.setOnClickListener(new View.OnClickListener() {
@@ -123,7 +123,7 @@ public class EasyPlayActivity extends AppCompatActivity {
             public void onClick(View view) {
                 letterArray.add(consonant5);
                 mUserEditText.setText(TextUtils.join("", letterArray));
-
+                mButton8.setVisibility(view.INVISIBLE);
             }
         });
         mButton9.setOnClickListener(new View.OnClickListener() {
@@ -131,7 +131,7 @@ public class EasyPlayActivity extends AppCompatActivity {
             public void onClick(View view) {
                 letterArray.add(consonant6);
                 mUserEditText.setText(TextUtils.join("", letterArray));
-
+                mButton9.setVisibility(view.INVISIBLE);
             }
         });
 
@@ -142,6 +142,15 @@ public class EasyPlayActivity extends AppCompatActivity {
                 wordArray.add(TextUtils.join("", letterArray));
                 letterArray.clear();
                 mUserEditText.setText("");
+                mButton1.setVisibility(view.VISIBLE);
+                mButton2.setVisibility(view.VISIBLE);
+                mButton3.setVisibility(view.VISIBLE);
+                mButton4.setVisibility(view.VISIBLE);
+                mButton5.setVisibility(view.VISIBLE);
+                mButton6.setVisibility(view.VISIBLE);
+                mButton7.setVisibility(view.VISIBLE);
+                mButton8.setVisibility(view.VISIBLE);
+                mButton9.setVisibility(view.VISIBLE);
             }
         });
 
