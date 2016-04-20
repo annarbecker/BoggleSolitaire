@@ -17,4 +17,124 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:id="@+id/easyPlayModeGridLayout"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerInParent="true"
+        android:layout_gravity="top|center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:id="@+id/editText"
+            android:layout_row="0"
+            android:layout_columnSpan="1"
+            android:text="A"
+            android:layout_column="0"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="85sp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:id="@+id/editText2"
+            android:layout_row="0"
+            android:layout_columnSpan="1"
+            android:text="B"
+            android:layout_column="1"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="85sp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:id="@+id/editText3"
+            android:layout_row="0"
+            android:layout_columnSpan="1"
+            android:text="C"
+            android:layout_column="2"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="85sp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:id="@+id/editText4"
+            android:layout_row="1"
+            android:text="D"
+            android:layout_column="0"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="85sp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:id="@+id/editText5"
+            android:layout_row="1"
+            android:layout_columnSpan="1"
+            android:text="E"
+            android:layout_column="1"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="85sp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:id="@+id/editText6"
+            android:layout_row="1"
+            android:layout_columnSpan="1"
+            android:text="F"
+            android:layout_column="2"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="85sp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:id="@+id/editText7"
+            android:layout_columnSpan="1"
+            android:layout_row="2"
+            android:text="G"
+            android:layout_column="0"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="85sp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:id="@+id/editText8"
+            android:layout_row="2"
+            android:layout_columnSpan="1"
+            android:text="H"
+            android:layout_column="1"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="85sp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:id="@+id/editText9"
+            android:layout_row="2"
+            android:layout_columnSpan="1"
+            android:text="I"
+            android:layout_column="2"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="85sp"
+            android:gravity="center_vertical|center_horizontal" />
+    </GridLayout>
+
 </RelativeLayout>
