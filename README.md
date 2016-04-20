@@ -14,7 +14,7 @@ You will need the following programs installed on your computer.
 * Java JDK 8+
 * Android SDK
 
-### To MyRestaurants
+### To Run Application
 * In a terminal window, navigate to ~/AndroidStudioProjects
 * Run `git clone https://github.com/mbrecunier/BoggleSolitaire.git`
 * Navigate to ~/AndroidStudioProjects/BoggleSolitaire
