@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your Words"
+        android:text="Valid Words"
         android:id="@+id/textView2"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -20,17 +20,28 @@
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/invalidListView"
+        android:id="@+id/scoringListView"
         android:layout_below="@+id/textView2"
         android:layout_marginTop="40dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invalid Words"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/scoringListView"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"/>
+
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/scoringListView"
-        android:layout_below="@+id/invalidListView"
+        android:id="@+id/invalidListView"
+        android:layout_below="@+id/textView3"
         android:layout_marginTop="40dp"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorAccent" />
 </RelativeLayout>
