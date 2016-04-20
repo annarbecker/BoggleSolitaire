@@ -3,23 +3,31 @@ package com.epicodus.bogglesolitaire;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.text.TextUtils;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
 
 public class EasyPlayActivity extends AppCompatActivity {
-    @Bind(R.id.textView1) TextView mTextView1;
-    @Bind(R.id.textView2) TextView mTextView2;
-    @Bind(R.id.textView3) TextView mTextView3;
-    @Bind(R.id.textView4) TextView mTextView4;
-    @Bind(R.id.textView5) TextView mTextView5;
-    @Bind(R.id.textView6) TextView mTextView6;
-    @Bind(R.id.textView7) TextView mTextView7;
-    @Bind(R.id.textView8) TextView mTextView8;
-    @Bind(R.id.textView9) TextView mTextView9;
-
+    @Bind(R.id.button1) Button mButton1;
+    @Bind(R.id.button2) Button mButton2;
+    @Bind(R.id.button3) Button mButton3;
+    @Bind(R.id.button4) Button mButton4;
+    @Bind(R.id.button5) Button mButton5;
+    @Bind(R.id.button6) Button mButton6;
+    @Bind(R.id.button7) Button mButton7;
+    @Bind(R.id.button8) Button mButton8;
+    @Bind(R.id.button9) Button mButton9;
+    @Bind(R.id.userEditText) EditText mUserEditText;
+    private List<String> letterArray = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,25 +36,102 @@ public class EasyPlayActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         Intent intent = getIntent();
-        String consonant1 = intent.getStringExtra("consonant1");
-        String consonant2 = intent.getStringExtra("consonant2");
-        String consonant3 = intent.getStringExtra("consonant3");
-        String consonant4 = intent.getStringExtra("consonant4");
-        String consonant5 = intent.getStringExtra("consonant5");
-        String consonant6 = intent.getStringExtra("consonant6");
-        String vowel1 = intent.getStringExtra("vowel1");
-        String vowel2 = intent.getStringExtra("vowel2");
-        String vowel3 = intent.getStringExtra("vowel3");
+        final String consonant1 = intent.getStringExtra("consonant1");
+        final String consonant2 = intent.getStringExtra("consonant2");
+        final String consonant3 = intent.getStringExtra("consonant3");
+        final String consonant4 = intent.getStringExtra("consonant4");
+        final String consonant5 = intent.getStringExtra("consonant5");
+        final String consonant6 = intent.getStringExtra("consonant6");
+        final String vowel1 = intent.getStringExtra("vowel1");
+        final String vowel2 = intent.getStringExtra("vowel2");
+        final String vowel3 = intent.getStringExtra("vowel3");
 
-        mTextView1.setText(consonant1);
-        mTextView2.setText(vowel1);
-        mTextView3.setText(consonant2);
-        mTextView4.setText(consonant3);
-        mTextView5.setText(vowel2);
-        mTextView6.setText(consonant4);
-        mTextView7.setText(vowel3);
-        mTextView8.setText(consonant5);
-        mTextView9.setText(consonant6);
+        mButton1.setText(consonant1);
+        mButton2.setText(vowel1);
+        mButton3.setText(consonant2);
+        mButton4.setText(consonant3);
+        mButton5.setText(vowel2);
+        mButton6.setText(consonant4);
+        mButton7.setText(vowel3);
+        mButton8.setText(consonant5);
+        mButton9.setText(consonant6);
+
+
+
+        mButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                letterArray.add(consonant1);
+                mUserEditText.setText(TextUtils.join("", letterArray));
+
+            }
+        });
+
+        mButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                letterArray.add(vowel1);
+                mUserEditText.setText(TextUtils.join("", letterArray));
+
+            }
+        });
+
+        mButton3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                letterArray.add(consonant2);
+                mUserEditText.setText(TextUtils.join("", letterArray));
+
+            }
+        });
+        mButton4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                letterArray.add(consonant3);
+                mUserEditText.setText(TextUtils.join("", letterArray));
+
+            }
+        });
+        mButton5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                letterArray.add(vowel2);
+                mUserEditText.setText(TextUtils.join("", letterArray));
+
+            }
+        });
+        mButton6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                letterArray.add(consonant4);
+                mUserEditText.setText(TextUtils.join("", letterArray));
+
+            }
+        });
+        mButton7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                letterArray.add(vowel3);
+                mUserEditText.setText(TextUtils.join("", letterArray));
+
+            }
+        });
+        mButton8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                letterArray.add(consonant5);
+                mUserEditText.setText(TextUtils.join("", letterArray));
+
+            }
+        });
+        mButton9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                letterArray.add(consonant6);
+                mUserEditText.setText(TextUtils.join("", letterArray));
+
+            }
+        });
 
     }
 }
