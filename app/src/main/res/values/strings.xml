@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BoggleSolitaire</string>
+    <string name="rule1TextView">&#8226; Make as many words as you can using at least three of the nine letters on your screen</string>
+    <string name="rule2TextView">&#8226; Use more than three letters for extra bonus points</string>
+</resources>
