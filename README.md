@@ -16,7 +16,7 @@ You will need the following programs installed on your computer.
 
 ### To Run Application
 * In a terminal window, navigate to ~/AndroidStudioProjects
-* Run `git clone https://github.com/mbrecunier/BoggleSolitaire.git`
+* Run `git clone https://github.com/annarbecker/BoggleSolitaire.git`
 * Navigate to ~/AndroidStudioProjects/BoggleSolitaire
 * Run on either an emulator or an Android OS Device connected to a computer
 
