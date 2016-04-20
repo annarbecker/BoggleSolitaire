@@ -20,8 +20,16 @@
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/userListView"
+        android:id="@+id/invalidListView"
         android:layout_below="@+id/textView2"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scoringListView"
+        android:layout_below="@+id/invalidListView"
         android:layout_marginTop="40dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
