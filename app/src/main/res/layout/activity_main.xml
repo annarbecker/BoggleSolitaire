@@ -13,23 +13,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/rule1TextView"
-        android:id="@+id/rule1TextView" />
+        android:id="@+id/rule1TextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/rule1TextView"
-        android:layout_marginTop="5dp"
         android:text="@string/rule2TextView"
-        android:id="@+id/rule2TextView" />
+        android:id="@+id/rule2TextView"
+        android:layout_below="@+id/rule1TextView"
+        android:layout_alignLeft="@+id/rule1TextView"
+        android:layout_alignStart="@+id/rule1TextView" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Play Easy Mode"
         android:id="@+id/easyPlayButton"
+        android:layout_marginTop="47dp"
         android:layout_below="@+id/rule2TextView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="58dp" />
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

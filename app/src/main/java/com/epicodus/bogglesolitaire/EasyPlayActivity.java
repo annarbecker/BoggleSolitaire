@@ -27,7 +27,11 @@ public class EasyPlayActivity extends AppCompatActivity {
     @Bind(R.id.button8) Button mButton8;
     @Bind(R.id.button9) Button mButton9;
     @Bind(R.id.userEditText) EditText mUserEditText;
+    @Bind(R.id.addWordButton) Button mAddWordButton;
+    @Bind(R.id.getScoreButton) Button mGetScoreButton;
+
     private List<String> letterArray = new ArrayList<String>();
+    private List<String> wordArray = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,8 +59,6 @@ public class EasyPlayActivity extends AppCompatActivity {
         mButton7.setText(vowel3);
         mButton8.setText(consonant5);
         mButton9.setText(consonant6);
-
-
 
         mButton1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -132,6 +134,26 @@ public class EasyPlayActivity extends AppCompatActivity {
 
             }
         });
+
+
+        mAddWordButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                wordArray.add(TextUtils.join("", letterArray));
+                letterArray.clear();
+                mUserEditText.setText("");
+            }
+        });
+
+        mGetScoreButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(EasyPlayActivity.this, ScoreActivity.class);
+                intent.putExtra("wordArray", TextUtils.join(", ", wordArray));
+                startActivity(intent);
+            }
+        });
+
 
     }
 }
