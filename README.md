@@ -16,7 +16,7 @@ You will need the following programs installed on your computer.
 
 ### To MyRestaurants
 * In a terminal window, navigate to ~/AndroidStudioProjects
-* Run `git clone https://github.com/annarbecker/BoggleSolitaire.git`
+* Run `git clone https://github.com/mbrecunier/BoggleSolitaire.git`
 * Navigate to ~/AndroidStudioProjects/BoggleSolitaire
 * Run on either an emulator or an Android OS Device connected to a computer
 
@@ -25,11 +25,6 @@ You will need the following programs installed on your computer.
 * Click 'Create New Emulator'
 * Select the device you would like to emulate (Recommended: Nexus 6)
 * Select the API level you would like to run - click 'Download' if not available (Recommended: Marshmallow - ABI: x86)
-* Select configuration settings for emulator
- * Recommended:
- * Scale: 4dp on device = 1px on screen
- * Camera - Front: Webcam()
- * Camera - Back: Webcam()
 * Click 'Finish' and allow Emulator to run
 
 ## Technologies Used
